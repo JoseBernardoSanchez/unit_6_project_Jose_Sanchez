@@ -1,6 +1,6 @@
 const qwerty = document.getElementById('qwerty');
 const phrase = document.getElementById('phrase');
-const overlay = document.querySelector('#overlay')
+const overlay = document.querySelector('#overlay');
 const buttonReset = document.querySelector('a.btn__reset');
 let missed = 5;
 
@@ -14,7 +14,7 @@ const phrases = ['four arms',
                 ];
 
 buttonReset.addEventListener('click', (e) => {
-    overlay.style.display = 'none'
+    overlay.style.display = 'none';
 });
 
 function getRandomPhraseAsArray(array) {
@@ -89,29 +89,11 @@ qwerty.addEventListener('click', (e) =>{
                         // target the rightmost liveHeart
             let rightLive = liveHearts[missed];
                         // change the src attribute
-            rightLive.src = 'images/lostHeart.png'
+            rightLive.src = 'images/lostHeart.png';
         }
         checkWin();
     } 
 });
-
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
 const phraseArray = getRandomPhraseAsArray(phrases);
 addPhraseToDisplay(phraseArray);
 
